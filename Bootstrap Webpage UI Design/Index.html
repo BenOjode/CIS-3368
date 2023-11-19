@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bens Kenyan Cuisine</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e9f5e9; /* Light green background */
+        }
+        .navbar-custom {
+            background-color: #155724; /* Dark green background for navbar */
+        }
+        .navbar-custom .navbar-brand, .navbar-custom .nav-link {
+            color: #fff; /* White text for contrast */
+        }
+        .navbar-custom .nav-link:hover {
+            color: #e9f5e9; /* Light green on hover */
+        }
+        .card-img-top {
+            height: 200px; /* Fixed image height for uniformity */
+            object-fit: cover; /* Ensures images are nicely cropped */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Menu -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="#">Bens Kenyan Cuisine</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#info">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#support">Support</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Restaurant Information -->
+    <section id="info" class="container mt-4">
+        <h2 class="text-center mb-4">Kenyan Food for Everybody!</h2>
+        <p>Located in the heart of the city, Ben's Kenyan Cuisine is a culinary gem renowned for offering an authentic
+            taste of Kenya's rich and diverse food culture. This amazing restaurant prides itself on its menu that
+            features a variety of Kenyan delicacies, skillfully prepared to tantalize your taste buds. A standout dish
+            is the perfectly roasted beef, marinated and cooked to perfection, offering a flavorful experience with every
+            bite. Additionally, the restaurant's samosas are a must-try, filled with savory ingredients and spices,
+            they are a true representation of Kenyan street food at its finest. From hearty stews to exotic spices,
+            Ben's Kenyan Cuisine is the go-to destination for anyone looking to explore the unique and delicious flavors of Kenya.</p>
+    </section>
+
+    <!-- Images Gallery -->
+    <section id="gallery" class="container mt-4">
+        <h2 class="text-center mb-4">Gallery</h2>
+        <div class="card-deck">
+            <div class="card">
+                <img src="Beef Plate.png" class="card-img-top" alt="Image 1">
+            </div>
+            <div class="card">
+                <img src="Roasted Meats.png" class="card-img-top" alt="Image 2">
+            </div>
+            <div class="card">
+                <img src="Salmosas.png" class="card-img-top" alt="Image 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Form -->
+    <section id="support" class="container mt-4">
+        <h2>Support Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="creditCard">Credit Card Number</label>
+                <input type="text" class="form-control" id="creditCard">
+            </div>
+            <div class="form-group">
+                <label for="cardType">Credit Card Type</label>
+                <select class="form-control" id="cardType">
+                    <option>Mastercard</option>
+                    <option>Visa</option>
+                    <option>American Express</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <!-- Contact Information -->
+    <section id="contact" class="container mt-4 text-center">
+        <h2>Contact Us</h2>
+        <p>... <!-- Contact information here --></p>
+        <div>
+            <a href="#"><img src="Facebook Icon.png" alt="Facebook" style="width: 40px;"></a>
+            <a href="#"><img src="Twitter Icon.png" alt="Twitter" style="width: 40px;"></a>
+            <a href="#"><img src="Insta Icon.png" alt="Instagram" style="width: 40px;"></a>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
