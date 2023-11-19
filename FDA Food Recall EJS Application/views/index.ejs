@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recall Information</title>
+    <style>
+        body {
+            background-color: #7b512e;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Retrieve FDA Food Recall Data</h2>
+    <form action="/getData" method="post">
+        <label for="numRecords">Enter Number of Records (1-5):</label><br>
+        <input type="number" id="numRecords" name="numRecords" min="1" max="5" required>
+        <button type="submit">Retrieve Data</button>
+    </form>
+</body>
+</html>
